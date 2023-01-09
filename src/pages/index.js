@@ -7,6 +7,7 @@ import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 
 import UsersList from "../components/userlist"
+import Hero from "../components/Hero"
 
 const links = [
   {
@@ -74,6 +75,7 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 const IndexPage = () => (
   <Layout>
     <div className={styles.textCenter}>
+      <Hero/>
       <UsersList/>
       <StaticImage
         src="../images/example.png"
