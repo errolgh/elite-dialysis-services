@@ -12,6 +12,28 @@ import BgImg from '../../images/dialysis-machines.jpg'
 // - add tint to hero image
 
 
+const Section = styled.section`
+    background-image: url(${BgImg});
+    display: block;
+    height: 70vh;
+    min-height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 4em;
+    /* background-position: 100%; */
+    /* object-fit: cover; */
+    
+    @media (max-width: 768px) {
+        
+    }
+`;
+
+const Content = styled.div`
+//   width: 100%;
+//   height: 100px;
+`;
+
 const Title = styled.h1`
   font-size: 35px;
   padding-top: 3em;
@@ -20,43 +42,11 @@ const Title = styled.h1`
 
 `;
 
-const Section = styled.section`
-    background-image: url(${BgImg});
-    /* background-position: 100%; */
-    display: block;
-    height: 70vh;
-    min-height: 600px;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* object-fit: cover; */
-
-
-    @media (max-width: 768px) {
-
-    }
-
-`;
-
-const Content = styled.div`
-//   width: 100%;
-//   height: 100px;
-`;
-
-// const Left = styled.div`
-//   padding-left: 220px;
-//   padding-top: 143px;
-// `;
-
-
 const Desc = styled.p`
-  /* width: 472px; */
   font-size: 16px;
-  /* color: #9ea0ac; */
   line-height: 30px;
   font-weight: 600;
   margin: 0 auto;
-  /* margin-top: 58px; */
 `;
 
 const Button = styled.a`
