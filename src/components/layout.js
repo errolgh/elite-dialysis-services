@@ -16,7 +16,13 @@ import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
   body {
-    color: ${props => (props.theme === "purple" ? "purple" : "white")};
+    /* color: ${props => (props.theme === "purple" ? "purple" : "white")}; */
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
   }
 `
 
@@ -38,9 +44,9 @@ const Layout = ({ children }) => {
       {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
       <div
         style={{
-          margin: `0 auto`,
-          maxWidth: `var(--size-content)`,
-          padding: `var(--size-gutter)`,
+          // margin: `0 auto`,
+          // maxWidth: `var(--size-content)`,
+          // padding: `var(--size-gutter)`,
         }}
       >
         <main>{children}</main>
