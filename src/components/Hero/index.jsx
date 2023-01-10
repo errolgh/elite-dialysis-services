@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import PropTypes from "prop-types";
-import { GatsbyImage } from "gatsby-plugin-image";
+// import PropTypes from "prop-types";
+// import { GatsbyImage } from "gatsby-plugin-image";
 import React from 'react';
 // import BgImg from '../assets/bg-image.png'; should i make an assets folder/what is best for gatsby
 import BgImg from '../../images/dialysis-machines.jpg'
@@ -47,6 +47,10 @@ const Desc = styled.p`
   line-height: 30px;
   font-weight: 600;
   margin: 0 auto;
+
+  span {
+    color: #54a2c4;
+  }
 `;
 
 const Button = styled.a`

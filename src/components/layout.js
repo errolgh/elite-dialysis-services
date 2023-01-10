@@ -1,18 +1,18 @@
+
+import * as React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+// import Header from "./header"
+import "./layout.css"
+import NavBar from "./Nav/NavBar"
+import { createGlobalStyle } from "styled-components"
+import Footer from "./Footer"
+
 /**
  * Layout component that queries for data
  * with Gatsby's useStaticQuery component
  *
  * See: https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/
  */
-
-import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
-import "./layout.css"
-import NavBar from "./Nav/NavBar"
-
-import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     scroll-behavior: smooth;
   }
-`
+`;
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -60,6 +60,7 @@ const Layout = ({ children }) => {
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
+        <Footer/>
       </div>
     </>
   )

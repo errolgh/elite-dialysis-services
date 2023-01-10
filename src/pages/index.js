@@ -85,6 +85,7 @@ const IndexPage = () => (
         formats={["auto", "webp", "avif"]}
         alt=""
         style={{ marginBottom: `var(--space-3)` }}
+        zIndex={1}
       />
       <h1>
         Welcome to <b>Gatsby!</b>
