@@ -80,11 +80,10 @@ const Hero = () => {
             Elite Dialysis Services
           </Title>
           <Desc>
-            Something meaningful and profound is supposed to go here, but let's be honest-- I haven't <span> thought</span>{' '}
-            of anything yet
+            Under Construction
           </Desc>
-          <Button href='https://grasslandbeef.com/beef-kidney' target='_blank'>
-            <span>Claim your free kidneys now</span>
+          <Button href='https://google.com' target='_blank'>
+            <span>Contact Us</span>
             {/* <MdKeyboardArrowRight /> */}
           </Button>
       </Content>
