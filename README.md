@@ -98,3 +98,19 @@ Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby f
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 # elite-dialysis-services
+
+    # SERVICES:
+    
+    Hemodialysis: This is a treatment that filters waste and excess fluid from the blood using a machine. Dialysis centers offer hemodialysis services to patients with end-stage renal disease (ESRD) who need regular dialysis treatment to survive.
+
+    Peritoneal dialysis: This is a treatment that uses the lining of the abdomen to filter waste and excess fluid from the blood. Dialysis centers may offer peritoneal dialysis services for patients who prefer this method or who are unable to undergo hemodialysis.
+
+    Home dialysis training: Some dialysis centers offer training for patients who want to do dialysis at home. Home dialysis can provide greater flexibility and convenience for patients who are able to do it.
+
+    Nutritional counseling: Patients with kidney disease often need to follow a special diet to manage their condition. Dialysis centers may offer nutritional counseling to help patients understand and follow their dietary restrictions.
+
+    Medication management: Patients with kidney disease may need to take medications to manage their condition. Dialysis centers may offer medication management services to help patients understand their medications and stay on track with their treatment.
+
+    Social work services: Dialysis centers may offer social work services to help patients cope with the emotional and social challenges of living with kidney disease. Social workers can provide counseling, support groups, and referrals to community resources.
+
+    Transportation assistance: Dialysis centers may offer transportation assistance for patients who have difficulty getting to and from their appointments.

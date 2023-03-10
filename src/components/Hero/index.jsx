@@ -23,8 +23,8 @@ const Section = styled.section`
     background-repeat: no-repeat;
     margin-bottom: 4em;
     z-index: 1000;
-    position: absolute;
-    top:0;
+    /* position: absolute; */
+    /* top:0; */
     /* background-position: 100%; */
     /* object-fit: cover; */
     
@@ -36,9 +36,9 @@ const Section = styled.section`
 const Content = styled.div`
 //   width: 100%;
 //   height: 100px;
-width: 50%;
-padding: 50px;
-padding-left: 200px;
+  width: 50%;
+  padding: 50px;
+  padding-left: 200px;
   text-align: left;
 `;
 
@@ -48,6 +48,10 @@ const Title = styled.h1`
   color: ${Theme.colors.white};
   font-weight: 600;
   font-family: "dmsDisplay", Georgia, serif;
+
+  span {
+      color: #BEC920;
+    }
 `;
 
 const Desc = styled.p`
@@ -58,34 +62,16 @@ const Desc = styled.p`
   margin: 0 auto;
   color: ${Theme.colors.white};
   margin-bottom: 40px;
-  span {
-    color: #54a2c4;
-  }
 `;
 
 const Button = styled.button`
-  /* display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  align-items: center;
-  border-radius: 18px;
-  margin-top: 58px;
-  width: 310px;
-  height: 71px;
-  line-height: 71px;
-  font-size: 18px;
-  text-align: center;
-  color: #fff;
-  cursor: pointer;
-  background: linear-gradient(90deg, #0546d6, #3f89fc);
-  text-decoration: none;
-  box-shadow: 0 15px 14px rgb(0 42 177 / 12%); */
+  /* background: linear-gradient(90deg, #0546d6, #3f89fc); */
   
   font-family: "Montserrat";
   font-size: 1.2em;
   padding: 15px 30px;
-  background-color: #00bfff;
-  color: #fff;
+  background-color: ${Theme.colors.eliteBlue};
+  color: ${ Theme.colors.white };
   border: none;
   border-radius: 5px;
   cursor: pointer;

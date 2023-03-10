@@ -6,8 +6,11 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 
-import UsersList from "../components/userlist"
 import Hero from "../components/Hero"
+import WelcomeCallOut from "../components/WelcomeCallOut"
+
+const welcomeText = `Welcome to our specialized dialysis facility, focused on providing high-quality treatment to our patients. Our facility offers hemodialysis, information on kidney disease and hemodialysis, and resources to support patients and their families. Our experienced medical professionals are dedicated to providing personalized care to improve the quality of life for our patients.`
+
 
 const links = [
   {
@@ -74,10 +77,15 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 
 const IndexPage = () => (
   <Layout>
-    <div className={styles.textCenter}>
+    {/* <div className={styles.textCenter}> */}
       <Hero/>
-      <UsersList/>
-      <StaticImage
+      <WelcomeCallOut 
+         icon="fas fa-star"
+         headerText="Welcome to Elite"
+         bodyText={welcomeText}
+      />
+      {/* <UsersList/> */}
+      {/* <StaticImage
         src="../images/example.png"
         loading="eager"
         width={64}
@@ -86,11 +94,11 @@ const IndexPage = () => (
         alt=""
         style={{ marginBottom: `var(--space-3)` }}
         zIndex={1}
-      />
-      <h1>
+      /> */}
+      {/* <h1>
         Welcome to <b>Gatsby!</b>
-      </h1>
-      <p className={styles.intro}>
+      </h1> */}
+      {/* <p className={styles.intro}>
         <b>Example pages:</b>{" "}
         {samplePageLinks.map((link, i) => (
           <React.Fragment key={link.url}>
@@ -100,9 +108,9 @@ const IndexPage = () => (
         ))}
         <br />
         Edit <code>src/pages/index.js</code> to update this page.
-      </p>
-    </div>
-    <ul className={styles.list}>
+      </p> */}
+    {/* </div> */}
+    {/* <ul className={styles.list}>
       {links.map(link => (
         <li key={link.url} className={styles.listItem}>
           <a
@@ -114,13 +122,13 @@ const IndexPage = () => (
           <p className={styles.listItemDescription}>{link.description}</p>
         </li>
       ))}
-    </ul>
-    {moreLinks.map((link, i) => (
+    </ul> */}
+    {/* {moreLinks.map((link, i) => (
       <React.Fragment key={link.url}>
         <a href={`${link.url}${utmParameters}`}>{link.text}</a>
         {i !== moreLinks.length - 1 && <> · </>}
       </React.Fragment>
-    ))}
+    ))} */}
   </Layout>
 )
 

@@ -26,7 +26,7 @@ const NavBar = () => {
   return (
     <Nav>
       <div className="logo">
-        Elite Dialysis Services
+        Elite Dialysis Service Ltd
       </div>
       <Burger />
     </Nav>
