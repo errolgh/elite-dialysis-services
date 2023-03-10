@@ -41,5 +41,22 @@ module.exports = {
     },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-netlify`,
+    {
+      resolve: `gatsby-omni-font-loader`,
+      options: {
+        enableListener: true,
+        preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
+        web: [
+          {
+            name: `Montserrat`,
+            file: `https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap`,
+          },
+          {
+            name: `dmsDisplay`,
+            file: `https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400&display=swap`,
+          },
+        ],
+      },
+    },
   ],
 }

@@ -7,6 +7,10 @@ const Ul = styled.ul`
   flex-flow: row nowrap;
   li {
     padding: 18px 10px;
+    :hover {
+        cursor: pointer;
+        background-color: #153b5a;
+    }
   }
   @media (max-width: 768px) {
     z-index: 2;
@@ -27,7 +31,7 @@ const Ul = styled.ul`
       :hover {
         cursor: pointer;
         background-color: #153b5a;
-      }
+    }
     }
   }
 `;
