@@ -8,9 +8,16 @@ const Container = styled.div`
     padding-left: 10px;
     padding-bottom: 10px;
     text-align: center;
-    p {
+    a {
         font-size: 16px;
-        color: #fff;
+        color: ${Theme.colors.black};
+        font-family: ${Theme.fonts.eliteSubTitle};
+        text-decoration: none;
+
+        &:hover {
+            color: ${Theme.colors.eliteBlue};
+            transition: color 0.3s ease;
+        }
     }
 `;
 

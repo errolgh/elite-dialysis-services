@@ -39,11 +39,11 @@ const StyledText = styled.p`
 
 const WelcomeCallOut = ({ headerText, bodyText, background }) => {
   return (
-    <Container style={{backgroundColor: background}}>
-      <StyledImage src={Logo} />
-      <StyledHeader>{headerText}</StyledHeader>
-      <StyledText>{bodyText}</StyledText>
-    </Container>
+      <Container style={{backgroundColor: background}}>
+        <StyledImage src={Logo} />
+        <StyledHeader>{headerText}</StyledHeader>
+        <StyledText>{bodyText}</StyledText>
+      </Container>
   );
 };
 
