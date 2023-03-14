@@ -3,31 +3,32 @@ import styled from 'styled-components';
 import { Link } from "gatsby";
 import Spectral from "../Spectral"
 import Theme from '../../utils/globals/Theme';
+import Logo from "../../images/hands-and-box.png";
 
 
 const FooterContainer = styled.footer`
   background-color: ${Theme.colors.lightGray};
   padding: 2rem;
   display: flex;
-  /* flex-direction: row; */
   justify-content: space-between;
-  /* align-items: center; */
 
+  .logo {
+    width: 75px;
+    margin-bottom: 1rem;
+    border-radius: 25px;
+  }
 `;
 
-const Logo = styled.img`
-  width: 100px;
-  margin-bottom: 1rem;
-`;
-
-const CompanyName = styled.h3`
+const FooterHeading = styled.h3`
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  font-family: ${Theme.fonts.eliteSubTitle};
 `;
 
 const ContactInfo = styled.p`
   font-size: 1rem;
-  `;
+  font-family: ${Theme.fonts.eliteText};
+`;
 
 const List = styled.ul`
   list-style: none;
@@ -46,10 +47,10 @@ const Footer = () => (
   <>
     <FooterContainer>
       <div>
-        <Logo src="logo.svg" alt="Company Logo" />
+        <img className="logo" src={Logo} alt="Company Logo" />
       </div>
       <div>
-        <CompanyName>Contact Info</CompanyName>
+        <FooterHeading>Contact Info</FooterHeading>
         <ContactInfo>
           55 Manchester Avenue<br />
           Lot 8 Fearon's Place<br />
@@ -59,7 +60,7 @@ const Footer = () => (
         </ContactInfo>
       </div>
       <div>
-        <CompanyName>Hours of Operation</CompanyName>
+        <FooterHeading>Hours of Operation</FooterHeading>
         <ContactInfo>
           <List>
             <li>Mon-Sat: 5:00AM - 5:00PM</li>
@@ -68,7 +69,7 @@ const Footer = () => (
         </ContactInfo>
       </div>
       <div>
-        <CompanyName>Location</CompanyName>
+        <FooterHeading>Location</FooterHeading>
         <GoogleMapWidget src={mapSource} frameborder="0" scrolling="no" marginheight="0" marginwidth="0" />
       </div>
     </FooterContainer>

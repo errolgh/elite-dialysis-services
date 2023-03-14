@@ -66,7 +66,7 @@ const Desc = styled.p`
 
 const Button = styled.button`
   /* background: linear-gradient(90deg, #0546d6, #3f89fc); */
-  
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
   font-family: "Montserrat";
   font-size: 1.2em;
   padding: 15px 30px;

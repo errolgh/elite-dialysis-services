@@ -35,7 +35,7 @@ const FeatureList = styled.div`
   display: flex;
   /* flex-wrap: wrap; */
   /* max-width: 1200px; */
-  padding: 40px 60px;
+  padding: 60px 60px;
   margin: 0 auto;
   justify-content: space-around;
   background-color: ${({ background }) => 
@@ -55,6 +55,7 @@ const FeatureItem = styled.div`
   p {
     font-family: "Montserrat", monospace;
     width: 300px;
+    line-height: 1.6;
   }
   
   svg {
@@ -72,8 +73,8 @@ const FeatureItem = styled.div`
     margin-top: 15px;
   }
 
-  &:nth-child(3)>h3 {
-    margin-top:12px;
+  &:nth-child(3)>svg {
+    margin-top:10px;
 
   }
 `;

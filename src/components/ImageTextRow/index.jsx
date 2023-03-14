@@ -7,6 +7,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 60px;
   `;
 
 const Image = styled.img`
@@ -28,13 +29,15 @@ const TextWrapper = styled.div`
 `;
 
 const Title = styled.h2`
-  font-size: 24px;
+  font-size: 32px;
   margin-bottom: 10px;
+  font-family: ${Theme.fonts.eliteSubTitle};
 `;
 
 const Description = styled.p`
   font-size: 16px;
   font-family: ${Theme.fonts.eliteText};
+  line-height: 1.6;
 `;
 
 // Define the component that uses the image and text styled components

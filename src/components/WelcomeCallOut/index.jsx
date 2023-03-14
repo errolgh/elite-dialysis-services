@@ -1,20 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 import Theme from "../../utils/globals/Theme";
+import Logo from "../../images/hands-and-box.png";
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 70px;
-  padding-top: 40px;
+  padding: 60px 0;
   background-color: ${({ background }) => 
   background ? Theme.colors.white : background};
 `;
 
-const StyledIcon = styled.i`
-  font-size: 2em;
-  padding-bottom: 10px;
+const StyledImage = styled.img`
+  width: 100%;
+  max-width: 75px;
+  margin-bottom: 20px;
+  border-radius: 25px;
 `;
 
 const StyledHeader = styled.h2`
@@ -31,12 +34,13 @@ const StyledText = styled.p`
   margin-bottom: 10px;
   font-family: "Montserrat", monospace;
   color: ${ Theme.colors.black };
+  line-height: 1.6;
 `;
 
-const WelcomeCallOut = ({ icon, headerText, bodyText, background }) => {
+const WelcomeCallOut = ({ headerText, bodyText, background }) => {
   return (
     <Container style={{backgroundColor: background}}>
-      <StyledIcon className={icon} />
+      <StyledImage src={Logo} />
       <StyledHeader>{headerText}</StyledHeader>
       <StyledText>{bodyText}</StyledText>
     </Container>

@@ -22,20 +22,24 @@ const testimonials = [
 
 const TestimonialCarousel = () => {
   const [activeSlide, setActiveSlide] = useState(0);
+  const [isHovering, setIsHovering] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveSlide(activeSlide === testimonials.length - 1 ? 0 : activeSlide + 1);
-    }, 5000);
+    let interval;
+    if (!isHovering) {
+      interval = setInterval(() => {
+        setActiveSlide(activeSlide === testimonials.length - 1 ? 0 : activeSlide + 1);
+      }, 4000);
+    }
     return () => clearInterval(interval);
-  }, [activeSlide]);
+  }, [activeSlide, isHovering]);
 
   const handleSlideClick = (index) => {
     setActiveSlide(index);
   };
 
   return (
-    <SliderContainer>
+    <SliderContainer onMouseEnter={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)}>
       {testimonials.map((testimonial, index) => (
         <Slide key={testimonial.id} active={activeSlide === index}>
           <Quote>{testimonial.quote}</Quote>
@@ -55,12 +59,12 @@ const TestimonialCarousel = () => {
   );
 };
 
+
 const SliderContainer = styled.div`
   position: relative;
   height: 300px;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
+  margin-bottom: 45px;
+
   `;
 
 const Slide = styled.div`
@@ -97,12 +101,15 @@ const SlideButtons = styled.div`
   left: 50%;
   transform: translateX(-50%);
   padding-bottom: 40px;
+  &:hover {
+    cursor: pointer;
+  }
   `;
 
 const SlideButton = styled.button`
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   border: none;
   margin-right: 10px;
