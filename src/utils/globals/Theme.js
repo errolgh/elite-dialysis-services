@@ -10,7 +10,8 @@ const Theme = {
     },
     fonts: {
         eliteText: '"Montserrat", monospace',
-        
+        eliteSubTitle: '"Oswald", monospace',
+        eliteTitle: '"dmsDisplay", Georgia, serif',
     }
 }
 export default Theme;
