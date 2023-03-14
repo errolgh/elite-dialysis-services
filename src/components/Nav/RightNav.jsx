@@ -17,10 +17,12 @@ const Ul = styled.ul`
     flex-flow: column nowrap;
     background-color: #0D2538;
     opacity: 0.98;
+
     position: fixed;
-    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
     right: 0;
+    
+    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     height: 100vh;
     width: 300px;
     width: 70vw;

@@ -8,72 +8,76 @@ import * as styles from "../components/index.module.css"
 
 import Hero from "../components/Hero"
 import WelcomeCallOut from "../components/WelcomeCallOut"
+import ServicesOffered from "../components/ServicesOffered"
+import ImageTextRow from "../components/ImageTextRow"
 
-const welcomeText = `Welcome to our specialized dialysis facility, focused on providing high-quality treatment to our patients. Our facility offers hemodialysis, information on kidney disease and hemodialysis, and resources to support patients and their families. Our experienced medical professionals are dedicated to providing personalized care to improve the quality of life for our patients.`
+import Theme from "../utils/globals/Theme"
+import TestimonialSlider from "../components/TestimonialCarousel"
 
+const welcomeText = `We are focused on providing high-quality treatment to our patients. Our facility offers hemodialysis, information on kidney disease and hemodialysis, and resources to support patients and their families. Our experienced medical professionals are dedicated to providing personalized care to improve the quality of life for our patients.`
 
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-  },
-  {
-    text: "Examples",
-    url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
-    description:
-      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-  },
-]
+// const links = [
+//   {
+//     text: "Tutorial",
+//     url: "https://www.gatsbyjs.com/docs/tutorial",
+//     description:
+//       "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
+//   },
+//   {
+//     text: "Examples",
+//     url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
+//     description:
+//       "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
+//   },
+//   {
+//     text: "Plugin Library",
+//     url: "https://www.gatsbyjs.com/plugins",
+//     description:
+//       "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
+//   },
+//   {
+//     text: "Build and Host",
+//     url: "https://www.gatsbyjs.com/cloud",
+//     description:
+//       "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
+//   },
+// ]
 
-const samplePageLinks = [
-  {
-    text: "Page 2",
-    url: "page-2",
-    badge: false,
-    description:
-      "A simple example of linking to another page within a Gatsby site",
-  },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
-]
+// const samplePageLinks = [
+//   {
+//     text: "Page 2",
+//     url: "page-2",
+//     badge: false,
+//     description:
+//       "A simple example of linking to another page within a Gatsby site",
+//   },
+//   { text: "TypeScript", url: "using-typescript" },
+//   { text: "Server Side Rendering", url: "using-ssr" },
+//   { text: "Deferred Static Generation", url: "using-dsg" },
+// ]
 
-const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
-  {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
-  },
-  {
-    text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
-  },
-  {
-    text: "Showcase",
-    url: "https://gatsbyjs.com/showcase/",
-  },
-  {
-    text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
-  },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
-]
+// const moreLinks = [
+//   { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
+//   {
+//     text: "Documentation",
+//     url: "https://gatsbyjs.com/docs/",
+//   },
+//   {
+//     text: "Starters",
+//     url: "https://gatsbyjs.com/starters/",
+//   },
+//   {
+//     text: "Showcase",
+//     url: "https://gatsbyjs.com/showcase/",
+//   },
+//   {
+//     text: "Contributing",
+//     url: "https://www.gatsbyjs.com/contributing/",
+//   },
+//   { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
+// ]
 
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
+// const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
 const IndexPage = () => (
   <Layout>
@@ -81,9 +85,28 @@ const IndexPage = () => (
       <Hero/>
       <WelcomeCallOut 
          icon="fas fa-star"
-         headerText="Welcome to Elite"
+         headerText={`Welcome to Elite Dialysis`}
          bodyText={welcomeText}
       />
+      <ServicesOffered 
+        background={ Theme.colors.lightGray }
+      />
+      <ImageTextRow 
+        imageSrc={`https://source.unsplash.com/random`}
+        title="May Pen"
+        description="Our medical center is conveniently located in May Pen, Jamaica - where we provide quality healthcare services to our community."
+      />
+      <TestimonialSlider />
+
+
+
+
+
+
+
+
+
+
       {/* <UsersList/> */}
       {/* <StaticImage
         src="../images/example.png"

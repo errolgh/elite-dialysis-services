@@ -21,7 +21,7 @@ const Section = styled.section`
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 4em;
+    /* margin-bottom: 4em; */
     z-index: 1000;
     /* position: absolute; */
     /* top:0; */

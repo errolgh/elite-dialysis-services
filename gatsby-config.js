@@ -55,6 +55,10 @@ module.exports = {
             name: `dmsDisplay`,
             file: `https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400&display=swap`,
           },
+          {
+            name: `Oswald`,
+            file: `https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap`,
+          },
         ],
       },
     },
