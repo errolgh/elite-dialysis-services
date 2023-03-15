@@ -52,6 +52,14 @@ const FeatureItem = styled.div`
   justify-content: center;
   text-align: center;
 
+
+  background-color: ${Theme.colors.white};
+  border-width: 1px;
+  border-style: solid;
+  border-color: ${Theme.colors.white};
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+
   p {
     font-family: "Montserrat", monospace;
     width: 300px;
