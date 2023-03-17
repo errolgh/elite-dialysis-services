@@ -29,7 +29,11 @@ const FooterContainer = styled.footer`
 const FooterHeading = styled.h3`
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  text-align: center;
   font-family: ${Theme.fonts.eliteSubTitle};
+  @media (min-width: ${Theme.breakpoints.lg}px) {
+    text-align: left;
+  }
 `;
 
 const ContactInfo = styled.p`
