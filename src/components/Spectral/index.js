@@ -32,7 +32,7 @@ export default function Spectral(){
     return (
         <>
             <Line></Line>
-            <Container><a href="https://spectralwebdesigns.netlify.app/" target="_blank">&copy; Spectral Web Designs</a></Container>
+            <Container><a href="https://spectralwebdesigns.netlify.app/" rel="noreferrer" target="_blank">&copy; Spectral Web Designs</a></Container>
         </>
     )
 }
