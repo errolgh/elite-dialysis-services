@@ -25,7 +25,6 @@ const welcomeText = `We are focused on providing high-quality treatment to our p
 
 const IndexPage = () => (
   <Layout>
-        {/* <Hero/> */}
         <Hero2 />
         <WelcomeCallOut 
           //  src={Logo}
