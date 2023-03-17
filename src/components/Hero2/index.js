@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import DesktopHero from '../../images/group 5.png'
+import DesktopHero from '../../images/hero-image.png'
 import MobileHero from '../../images/mobile-hero.jpg'
 import NoWrap from '../NoWrap';
 import Theme from '../../utils/globals/Theme';
