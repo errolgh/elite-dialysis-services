@@ -10,8 +10,8 @@ const FooterContainer = styled.footer`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   background-color: ${Theme.colors.lightGray};
+  align-items: center;
   padding: 2rem 0rem;
   
   .logo {
@@ -21,6 +21,7 @@ const FooterContainer = styled.footer`
   }
   
   @media (min-width: ${Theme.breakpoints.md}px) {
+    align-items: flex-start;
     padding: 2rem 3rem;
     flex-direction: row;
   }
@@ -47,6 +48,7 @@ const ContactInfo = styled.p`
 
 const List = styled.ul`
   list-style: none;
+  margin-left: 0;
 `;
   
 const GoogleMapWidget = styled.iframe`
@@ -77,11 +79,13 @@ const Footer = () => (
       <FooterSubSection>
         <FooterHeading>Contact Info</FooterHeading>
         <ContactInfo>
-          55 Manchester Avenue<br />
-          Lot 8 Fearon's Place<br />
-          May Pen, Jamaica<br />
-          (876) 203-5254<br />
-          elitedialysisserviceltd@gmail.com
+          <List>
+            <li>55 Manchester Avenue</li>
+            <li>Lot 8 Fearon's Place</li>
+            <li>May Pen, Jamaica</li>
+            <li>(876) 203-5254</li>
+          <li>elitedialysisserviceltd@gmail.com</li>
+          </List>
         </ContactInfo>
       </FooterSubSection>
 

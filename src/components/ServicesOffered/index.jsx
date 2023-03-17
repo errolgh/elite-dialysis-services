@@ -40,10 +40,10 @@ const FeatureList = styled.div`
   background-color: ${({ background }) => background ? background : Theme.colors.white};
 
   /* max-width: 1200px; */
-  padding: 7em 30px;
+  padding: 3em 30px;
 
   @media (min-width: ${Theme.breakpoints.md}px) {
-      padding: 60px 60px;
+      padding: 6rem 60px;
   }
 
   @media (min-width: ${Theme.breakpoints.lg}px) {
