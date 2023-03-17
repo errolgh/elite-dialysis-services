@@ -67,6 +67,7 @@ const SliderContainer = styled.div`
   `;
 
 const Slide = styled.div`
+  padding: 30px 20px;
   position: absolute;
   top: 0;
   left: 0;

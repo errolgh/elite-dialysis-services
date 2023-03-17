@@ -7,15 +7,22 @@ import Logo from "../../images/hands-and-box.png";
 
 
 const FooterContainer = styled.footer`
-  background-color: ${Theme.colors.lightGray};
-  padding: 2rem 6.5rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-
+  align-items: center;
+  background-color: ${Theme.colors.lightGray};
+  padding: 2rem 0rem;
+  
   .logo {
     width: 75px;
     margin-bottom: 1rem;
     border-radius: 25px;
+  }
+  
+  @media (min-width: ${Theme.breakpoints.md}px) {
+    padding: 2rem 3rem;
+    flex-direction: row;
   }
 `;
 
@@ -26,8 +33,12 @@ const FooterHeading = styled.h3`
 `;
 
 const ContactInfo = styled.p`
+  text-align: center;
   font-size: 1rem;
   font-family: ${Theme.fonts.eliteText};
+  @media (min-width: ${Theme.breakpoints.lg}px) {
+    text-align: left;
+  }
 `;
 
 const List = styled.ul`
@@ -36,8 +47,17 @@ const List = styled.ul`
   
 const GoogleMapWidget = styled.iframe`
   border: none;
-  width: 600px;
-  height: 300px;
+  width: 100%;
+  @media (min-width: ${Theme.breakpoints.lg}px) {
+    width: 34vw;
+    height: 300px;
+  }
+`;
+
+const FooterSubSection = styled.div`
+  /* align-items: center; */
+  @media (min-width: ${Theme.breakpoints.md}px) {
+  }
 `;
 
 const zoomLevel = 14;
@@ -46,10 +66,11 @@ const mapSource = `https://maps.google.com/maps?q=55%20Manchester%20Avenue,%20Ma
 const Footer = () => (
   <>
     <FooterContainer>
-      <div>
+      <FooterSubSection>
         <img className="logo" src={Logo} alt="Company Logo" />
-      </div>
-      <div>
+      </FooterSubSection>
+
+      <FooterSubSection>
         <FooterHeading>Contact Info</FooterHeading>
         <ContactInfo>
           55 Manchester Avenue<br />
@@ -58,8 +79,9 @@ const Footer = () => (
           (876) 203-5254<br />
           elitedialysisserviceltd@gmail.com
         </ContactInfo>
-      </div>
-      <div>
+      </FooterSubSection>
+
+      <FooterSubSection>
         <FooterHeading>Hours of Operation</FooterHeading>
         <ContactInfo>
           <List>
@@ -67,11 +89,13 @@ const Footer = () => (
             <li>Sun: Closed</li>
           </List>
         </ContactInfo>
-      </div>
-      <div>
+      </FooterSubSection>
+
+      <FooterSubSection>
         <FooterHeading>Location</FooterHeading>
         <GoogleMapWidget src={mapSource} frameborder="0" scrolling="no" marginheight="0" marginwidth="0" />
-      </div>
+      </FooterSubSection>
+      
     </FooterContainer>
     <Spectral />
   </>

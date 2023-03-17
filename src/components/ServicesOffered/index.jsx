@@ -32,39 +32,42 @@ const features = [
 
 // Define the styled components for the feature list
 const FeatureList = styled.div`
-  padding: 10px 30px;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
   flex-direction: column;
   /* flex-wrap: wrap; */
-  /* max-width: 1200px; */
-  margin: 0 auto;
-  justify-content: space-around;
-  background-color: ${({ background }) => 
-  background ? background : Theme.colors.white};
+  background-color: ${({ background }) => background ? background : Theme.colors.white};
 
-@media (min-width: ${Theme.breakpoints.md}px) {
-    padding: 60px 60px;
+  /* max-width: 1200px; */
+  padding: 7em 30px;
+
+  @media (min-width: ${Theme.breakpoints.md}px) {
+      padding: 60px 60px;
   }
 
   @media (min-width: ${Theme.breakpoints.lg}px) {
     flex-direction: row;
   }
-  `;
+`;
 
 const FeatureItem = styled.div`
-  /* flex: 1 0 150px; */
-  margin: 30px 0;
-  padding: 20px 5px;
-  @media (min-width: ${Theme.breakpoints.lg}px) {
-    margin: 20px;
-    padding: 20px;
-  }
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  max-width: 400px;
+  /* flex: 1 0 150px; */
+  
+  max-width: 340px;
+  max-height: 400px;
+  margin: 30px 0;
+  padding: 20px 16px;
+
+  @media (min-width: ${Theme.breakpoints.lg}px) {
+    margin: 20px;
+    padding: 40px 20px;
+  }
 
 
   background-color: ${Theme.colors.white};
@@ -76,7 +79,6 @@ const FeatureItem = styled.div`
 
   p {
     font-family: "Montserrat", monospace;
-    /* width: 300px; */
     line-height: 1.6;
   }
   

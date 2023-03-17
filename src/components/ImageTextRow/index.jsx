@@ -28,6 +28,7 @@ const Image = styled.img`
   
   @media (min-width: ${Theme.breakpoints.md}px) {
     width: 50%;
+    height: 70vh;
     order: 2;
   }
   
