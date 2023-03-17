@@ -17,11 +17,11 @@ const Nav = styled.nav`
   color: ${Theme.colors.white};
   font-family: ${Theme.fonts.eliteSubTitle};
   font-size: 18px;
-  background-color: rgb(13, 37, 56, 0.8);
+  background-color: ${Theme.colors.darkBlue};
   
   :hover {
-    background-color: rgb(13, 37, 56, 1.0);
-    transition: background 0.3s ease;
+    /* background-color: rgb(13, 37, 56, 1.0);
+    transition: background 0.3s ease; */
   }
 `;
 

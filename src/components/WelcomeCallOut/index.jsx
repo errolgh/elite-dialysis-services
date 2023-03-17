@@ -8,7 +8,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding-bottom: 70px;
-  padding: 60px 0;
+  padding: 60px 24px;
   background-color: ${({ background }) => 
   background ? Theme.colors.white : background};
 `;

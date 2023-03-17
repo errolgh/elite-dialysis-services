@@ -7,6 +7,7 @@ import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 
 import Hero from "../components/Hero"
+import Hero2 from "../components/Hero2"
 import WelcomeCallOut from "../components/WelcomeCallOut"
 import ServicesOffered from "../components/ServicesOffered"
 import ImageTextRow from "../components/ImageTextRow"
@@ -24,7 +25,8 @@ const welcomeText = `We are focused on providing high-quality treatment to our p
 
 const IndexPage = () => (
   <Layout>
-        <Hero/>
+        {/* <Hero/> */}
+        <Hero2 />
         <WelcomeCallOut 
           //  src={Logo}
           alt="hands holding kidneys"

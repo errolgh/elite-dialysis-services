@@ -1,11 +1,13 @@
 import styled from 'styled-components';
+import React from 'react';
 // import PropTypes from "prop-types";
 // import { GatsbyImage } from "gatsby-plugin-image";
-import React from 'react';
 // should i make an assets folder/what is best for gatsby
-import SiteHero from '../../images/dialysis-hero.jpg'
 // import { MdKeyboardArrowRight } from 'react-icons/md';
+import DesktopHero from '../../images/dialysis-hero.jpg'
+import MobileHero from '../../images/mobile-hero.jpg'
 import Theme from '../../utils/globals/Theme';
+import NoWrap from '../NoWrap';
 
 
 // - make global variables for colors, sizes, animations etc.
@@ -14,37 +16,57 @@ import Theme from '../../utils/globals/Theme';
 
 
 const Section = styled.section`
-    background-image: url(${SiteHero});
-    display: block;
+  display: block;
+  background-image: url(${MobileHero});
+  /* ::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  } */
+  height: 40vh;
+  width: 100%;
+  object-fit: contain;
+  /* width: 100%; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1000;
+  
+  @media (min-width: ${Theme.breakpoints.md}px){
+    background-image: url(${DesktopHero});
     height: 90vh;
     min-height: 600px;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* margin-bottom: 4em; */
-    z-index: 1000;
-    /* position: absolute; */
-    /* top:0; */
-    /* background-position: 100%; */
-    /* object-fit: cover; */
-    
-    /* @media (max-width: 768px) {
-        display: block;
-    } */
+  };
 `;
 
 const Content = styled.div`
-//   width: 100%;
-//   height: 100px;
-  width: 50%;
-  padding: 50px;
-  padding-left: 200px;
-  text-align: left;
+  @media (min-width: ${Theme.breakpoints.lg}px) {
+    width: 50%;
+    padding: 50px;
+    padding-left: 200px;
+    text-align: left;
+  }
 `;
 
 const Title = styled.h1`
-  font-size: 55px;
-  padding-top: 3em;
+  font-size: 2rem;
+  padding-top: 4rem;
+  text-align: center;
+  margin-bottom: 0;
+
+  @media (min-width: ${Theme.breakpoints.md}px) {
+    font-size: 4vw;
+    padding-top: 8.5rem;
+    text-align: left;
+  }
+
+  @media (min-width: ${Theme.breakpoints.xxl}px) {
+    font-size: 56px;
+  }
+
   color: ${Theme.colors.white};
   font-weight: 600;
   font-family: "dmsDisplay", Georgia, serif;
@@ -56,12 +78,20 @@ const Title = styled.h1`
 
 const Desc = styled.p`
   font-family: "Montserrat", monospace;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 600;
-  margin: 0 auto;
   color: ${Theme.colors.white};
-  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 20px;
+  
+  @media (min-width: ${Theme.breakpoints.md}px) {
+    line-height: 30px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: ${Theme.breakpoints.xxl}px) {
+    font-size: 18px;
+  }
 `;
 
 const Button = styled.button`
@@ -87,8 +117,8 @@ const Hero = () => {
     <Section>
       <Content>
           <Title>
-            Quality care for<br/>
-            <span> better health</span>
+            <NoWrap>Quality care for</NoWrap>
+            <NoWrap><span>Better health</span></NoWrap>
           </Title>
           <Desc>
           We provide top-notch dialysis services to ensure our patients receive the best care possible.

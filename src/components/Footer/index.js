@@ -8,7 +8,7 @@ import Logo from "../../images/hands-and-box.png";
 
 const FooterContainer = styled.footer`
   background-color: ${Theme.colors.lightGray};
-  padding: 2rem;
+  padding: 2rem 6.5rem;
   display: flex;
   justify-content: space-between;
 
