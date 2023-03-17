@@ -16,7 +16,7 @@ const Theme = {
     },
     breakpoints: {
         xs: 380,
-        sm: 576, //500?
+        sm: 576, //512ish?
         md: 768,
         lg: 992,
         xl: 1200,
@@ -24,3 +24,39 @@ const Theme = {
     }
 }
 export default Theme;
+
+
+// Responsive Design Media Queries:
+
+/*
+    //380px:
+    @media (min-width: ${Theme.breakpoints.xs}px) {
+        border: 1px solid red;
+    }
+    
+    //576px:
+    @media (min-width: ${Theme.breakpoints.sm}px) {
+        border: 1px solid red;
+    }
+    
+    //768px:
+    @media (min-width: ${Theme.breakpoints.md}px) {
+        border: 1px solid red;
+    }
+    
+    //992px:
+    @media (min-width: ${Theme.breakpoints.lg}px) {
+        border: 1px solid red;
+    }
+    
+    //1200px:
+    @media (min-width: ${Theme.breakpoints.xl}px) {
+        border: 1px solid red;
+    }
+    
+    //1400px:
+    @media (min-width: ${Theme.breakpoints.xxl}px) {
+        border: 1px solid red;
+    } 
+
+*/

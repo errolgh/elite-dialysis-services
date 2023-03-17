@@ -36,7 +36,6 @@ const FeatureList = styled.div`
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  /* flex-wrap: wrap; */
   background-color: ${({ background }) => background ? background : Theme.colors.white};
 
   /* max-width: 1200px; */
@@ -57,12 +56,16 @@ const FeatureItem = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* flex: 1 0 150px; */
   
   max-width: 340px;
-  max-height: 400px;
+  height: 400px;
   margin: 30px 0;
-  padding: 20px 16px;
+  padding: 15px 8px;
+  
+  @media (min-width: ${Theme.breakpoints.xs}px) {
+    margin: 20px;
+    padding: 20px 16px;
+  }
 
   @media (min-width: ${Theme.breakpoints.lg}px) {
     margin: 20px;
@@ -83,15 +86,26 @@ const FeatureItem = styled.div`
   }
   
   svg {
-    font-size: 48px;
+    font-size: 28px;
     margin-bottom: 8px;
+
+  @media (min-width: ${Theme.breakpoints.xs}px) {
+     font-size: 36px;
+    }
+    
+    @media (min-width: ${Theme.breakpoints.sm}px) {
+      font-size: 46px;
+   }
   }
   
   h3 {
     font-family: "Oswald", monospace;
     margin-bottom: 10px;
-    font-size: 32px;
-
+    font-size: 22px;
+    
+    @media (min-width: ${Theme.breakpoints.sm}px) {
+      font-size: 28px;
+   }
   }
   &:first-child>h3 {
     margin-top: 15px;

@@ -28,10 +28,15 @@ const FooterContainer = styled.footer`
 `;
 
 const FooterHeading = styled.h3`
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
   text-align: center;
   font-family: ${Theme.fonts.eliteSubTitle};
+
+  @media (min-width: ${Theme.breakpoints.md}px) {
+  }
+
+
   @media (min-width: ${Theme.breakpoints.lg}px) {
     text-align: left;
   }
@@ -39,8 +44,10 @@ const FooterHeading = styled.h3`
 
 const ContactInfo = styled.p`
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
   font-family: ${Theme.fonts.eliteText};
+
   @media (min-width: ${Theme.breakpoints.lg}px) {
     text-align: left;
   }
@@ -61,7 +68,6 @@ const GoogleMapWidget = styled.iframe`
 `;
 
 const FooterSubSection = styled.div`
-  /* align-items: center; */
   @media (min-width: ${Theme.breakpoints.md}px) {
   }
 `;
