@@ -32,15 +32,20 @@ const features = [
 
 // Define the styled components for the feature list
 const FeatureList = styled.div`
+  padding: 10px 30px;
   display: flex;
   flex-direction: column;
   /* flex-wrap: wrap; */
   /* max-width: 1200px; */
-  padding: 60px 60px;
   margin: 0 auto;
   justify-content: space-around;
   background-color: ${({ background }) => 
   background ? background : Theme.colors.white};
+
+@media (min-width: ${Theme.breakpoints.md}px) {
+    padding: 60px 60px;
+  }
+
   @media (min-width: ${Theme.breakpoints.lg}px) {
     flex-direction: row;
   }
@@ -48,8 +53,12 @@ const FeatureList = styled.div`
 
 const FeatureItem = styled.div`
   /* flex: 1 0 150px; */
-  margin: 20px;
-  padding: 20px;
+  margin: 30px 0;
+  padding: 20px 5px;
+  @media (min-width: ${Theme.breakpoints.lg}px) {
+    margin: 20px;
+    padding: 20px;
+  }
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,7 +76,7 @@ const FeatureItem = styled.div`
 
   p {
     font-family: "Montserrat", monospace;
-    width: 300px;
+    /* width: 300px; */
     line-height: 1.6;
   }
   
