@@ -5,17 +5,17 @@ import Theme from '../../utils/globals/Theme';
 const testimonials = [
   {
     id: 1,
-    quote: '"I go to dialysis two times a week, I cannot stress enough how important it is to have a facility like Elite that feels like welcoming family."',
+    quote: '"I go to dialysis two times a week, I cannot stress enough how important it is to have a facility like Elite that feels like a welcoming family."',
     author: 'Sheldon'
   },
   {
     id: 2,
-    quote: '"The staff at Elite truly went above and beyond to make my treatments as comfortable as possible. Warm blankets to the calming music, they created an atmosphere that made a world of difference for me."',
+    quote: '"The staff at Elite went above and beyond to make my treatments as comfortable as possible. From warm blankets to the calming music, they created an atmosphere that made a world of difference for me."',
     author: 'Keisha Campbell'
   },
   {
     id: 3,
-    quote: '"I was nervous about starting dialysis, but the team at Elite quickly put my mind at ease. They took the time to answer all of my questions and made sure I felt comfortable every step of the way."',
+    quote: '"I was nervous about starting treatment, but the technician put my mind at ease. She answered all of my questions and made sure I felt comfortable every step of the way."',
     author: 'Tanya Davis'
   }
 ];
@@ -63,7 +63,7 @@ const TestimonialCarousel = () => {
 const SliderContainer = styled.div`
   position: relative;
   height: 300px;
-  margin-bottom: 45px;
+  margin-bottom: 5rem;
   `;
 
 const Slide = styled.div`
@@ -80,31 +80,53 @@ const Slide = styled.div`
   `;
 
 const Quote = styled.p`
-  font-size: 24px;
+  font-size: 1em;
   font-weight: bold;
   margin-bottom: 10px;
   margin: 0 auto;
   color: ${Theme.colors.black};
   font-family: ${Theme.fonts.eliteText};
+
+  @media (min-width: ${Theme.breakpoints.xs}px) {
+    font-size: 18px;
+  }
+  @media (min-width: ${Theme.breakpoints.sm}px) {
+    font-size: 22px;
+  }
+  @media (min-width: ${Theme.breakpoints.md}px) {
+    font-size: 24px;
+  }
   `;
 
 const Author = styled.p`
-  font-size: 18px;
+  font-size: 14px;
   font-style: italic;
   margin: 0 auto;
   margin-top: 10px;
+
+  @media (min-width: ${Theme.breakpoints.xs}px) {
+    font-size: 1em;
+  }
   `;
 
 const SlideButtons = styled.div`
   position: absolute;
-  bottom: 10px;
+  bottom: -3rem;
   left: 50%;
   transform: translateX(-50%);
   padding-bottom: 40px;
+
   &:hover {
     cursor: pointer;
   }
-  `;
+
+  @media (min-width: ${Theme.breakpoints.xs}px) {
+    bottom: -2.5rem;
+  }
+  @media (min-width: ${Theme.breakpoints.sm}px) {
+    bottom: -2.5rem;
+  }
+`;
 
 const SlideButton = styled.button`
   display: inline-block;

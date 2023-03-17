@@ -15,7 +15,7 @@ const Theme = {
         eliteTitle: '"dmsDisplay", Georgia, serif',
     },
     breakpoints: {
-        xs: 280,
+        xs: 380,
         sm: 576, //500?
         md: 768,
         lg: 992,
