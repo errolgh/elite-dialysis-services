@@ -18,11 +18,6 @@ const Nav = styled.nav`
   font-family: ${Theme.fonts.eliteSubTitle};
   font-size: 18px;
   background-color: ${Theme.colors.darkBlue};
-  
-  :hover {
-    /* background-color: rgb(13, 37, 56, 1.0);
-    transition: background 0.3s ease; */
-  }
 `;
 
 
@@ -50,7 +45,7 @@ const NavBar = () => {
         <LogoContainer>
           <img src={Logo} width={36}/>
           <span>
-            Elite Dialysis Service Ltd
+            Elite Dialysis
           </span>
         </LogoContainer>
       </div>

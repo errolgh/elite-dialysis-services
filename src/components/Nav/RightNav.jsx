@@ -7,10 +7,12 @@ const Ul = styled.ul`
   flex-flow: row nowrap;
   padding-right: 50px;
   li {
-    padding: 18px 10px;
+    padding: 18px 0px 18px 12px;
     :hover {
         cursor: pointer;
         background-color: #153b5a;
+        /* background: rgb(21,59,90); */
+        background: linear-gradient(270deg, rgba(21,59,90,0.5648460067620799) 0%, rgba(21,59,90,1) 32%);
     }
   }
   @media (max-width: 768px) {

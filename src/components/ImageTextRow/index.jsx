@@ -51,7 +51,7 @@ const Title = styled.h2`
   `;
 
 const Description = styled.p`
-  text-align: justify;
+  /* text-align: justify; */
   font-size: 16px;
   font-family: ${Theme.fonts.eliteText};
   line-height: 1.6;
