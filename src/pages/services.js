@@ -162,7 +162,7 @@ const Services = () => {
             </p>
 
             <p className="text-gray-700">
-              At [Your Dialysis Center Name], we are dedicated to providing
+              At Elite Dialysis Center, we are dedicated to providing
               comprehensive and compassionate care to patients with kidney
               disease. With a range of services tailored to individual needs, we
               strive to enhance the quality of life for each patient under our
