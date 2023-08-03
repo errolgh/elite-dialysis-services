@@ -97,10 +97,11 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby framework that combines a modern developer experience with an optimized, global edge network.
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
 # elite-dialysis-services
 
     # SERVICES:
-    
+
     Hemodialysis: This is a treatment that filters waste and excess fluid from the blood using a machine. Dialysis centers offer hemodialysis services to patients with end-stage renal disease (ESRD) who need regular dialysis treatment to survive.
 
     Peritoneal dialysis: This is a treatment that uses the lining of the abdomen to filter waste and excess fluid from the blood. Dialysis centers may offer peritoneal dialysis services for patients who prefer this method or who are unable to undergo hemodialysis.
@@ -114,3 +115,11 @@ Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby f
     Social work services: Dialysis centers may offer social work services to help patients cope with the emotional and social challenges of living with kidney disease. Social workers can provide counseling, support groups, and referrals to community resources.
 
     Transportation assistance: Dialysis centers may offer transportation assistance for patients who have difficulty getting to and from their appointments.
+
+
+react-scroll-to-top https://www.npmjs.com/package/react-scroll-to-top
+form handling... probably emailjs
+services page
+image on contact page
+x on mobile scrolls away. mobile, open nav, scroll.
+potentially split first and last name, useMemo to personally thank user for submission

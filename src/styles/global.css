@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define custom box-shadow and transition classes */
+@layer utilities {
+    .custom-box-shadow {
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+        rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    }
+  
+    .custom-transition {
+      transition: all 0.3s ease;
+    }
+  }
+  
+  /* Create the Tailwind CSS class */
+  .btn-primary {
+    @apply custom-box-shadow;
+    font-family: "Montserrat";
+    font-size: 1.2em;
+    padding: 18px 36px;
+    font-weight: 600;
+    background-color: #20BEC9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    @apply custom-transition;
+    width: 100%;
+  }
+  /* Hover state */
+  .btn-primary:hover {
+    background-color: #0D253A;
+  }
+  
+  

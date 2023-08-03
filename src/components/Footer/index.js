@@ -1,10 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from "gatsby";
+import React from "react"
+import styled from "styled-components"
+import { Link } from "gatsby"
 import Spectral from "../Spectral"
-import Theme from '../../utils/globals/Theme';
-import Logo from "../../images/hands-and-box.png";
-
+import Theme from "../../utils/globals/Theme"
+import Logo from "../../images/hands-and-box.png"
 
 const FooterContainer = styled.footer`
   display: flex;
@@ -13,19 +12,19 @@ const FooterContainer = styled.footer`
   background-color: ${Theme.colors.lightGray};
   align-items: center;
   padding: 2rem 0rem;
-  
+
   .logo {
     width: 75px;
     margin-bottom: 1rem;
     border-radius: 25px;
   }
-  
+
   @media (min-width: ${Theme.breakpoints.md}px) {
     align-items: flex-start;
     padding: 2rem 3rem;
     flex-direction: row;
   }
-`;
+`
 
 const FooterHeading = styled.h3`
   font-size: 1.2rem;
@@ -36,11 +35,10 @@ const FooterHeading = styled.h3`
   @media (min-width: ${Theme.breakpoints.md}px) {
   }
 
-
   @media (min-width: ${Theme.breakpoints.lg}px) {
     text-align: left;
   }
-`;
+`
 
 const ContactInfo = styled.p`
   text-align: center;
@@ -51,13 +49,13 @@ const ContactInfo = styled.p`
   @media (min-width: ${Theme.breakpoints.lg}px) {
     text-align: left;
   }
-`;
+`
 
 const List = styled.ul`
   list-style: none;
   margin-left: 0;
-`;
-  
+`
+
 const GoogleMapWidget = styled.iframe`
   border: none;
   width: 100%;
@@ -65,14 +63,14 @@ const GoogleMapWidget = styled.iframe`
     width: 34vw;
     height: 300px;
   }
-`;
+`
 
 const FooterSubSection = styled.div`
   @media (min-width: ${Theme.breakpoints.md}px) {
   }
-`;
+`
 
-const zoomLevel = 14;
+const zoomLevel = 14
 const mapSource = `https://maps.google.com/maps?q=55%20Manchester%20Avenue,%20May%20Pen,%20Jamaica&t=&z=${zoomLevel}&ie=UTF8&iwloc=&output=embed`
 
 const Footer = () => (
@@ -90,7 +88,7 @@ const Footer = () => (
             <li>Lot 8 Fearon's Place</li>
             <li>May Pen, Jamaica</li>
             <li>(876) 203-5254</li>
-          <li>elitedialysisserviceltd@gmail.com</li>
+            <li>elitedialysisserviceltd@gmail.com</li>
           </List>
         </ContactInfo>
       </FooterSubSection>
@@ -107,12 +105,17 @@ const Footer = () => (
 
       <FooterSubSection>
         <FooterHeading>Location</FooterHeading>
-        <GoogleMapWidget src={mapSource} frameborder="0" scrolling="no" marginheight="0" marginwidth="0" />
+        <GoogleMapWidget
+          src={mapSource}
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+        />
       </FooterSubSection>
-      
     </FooterContainer>
     <Spectral />
   </>
-);
+)
 
-export default Footer;
+export default Footer

@@ -1,6 +1,5 @@
-
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+// import { useStaticQuery, graphql } from "gatsby"
 // import Header from "./header"
 import "./layout.css"
 import NavBar from "./Nav/NavBar"
@@ -24,30 +23,37 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     scroll-behavior: smooth;
   }
-`;
+  
+  main {
+    margin: 0 auto;
+    max-width: 1850px;
+  }
+`
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query SiteTitleQuery {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //       }
+  //     }
+  //   }
+  // `)
 
   return (
     <>
       <GlobalStyle theme="purple" />
-      <NavBar  />
+      <NavBar />
       {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
       <div
-        style={{
-          // margin: `0 auto`,
-          // maxWidth: `var(--size-content)`,
-          // padding: `var(--size-gutter)`,
-        }}
+        style={
+          {
+            // margin: `0 auto`,
+            // maxWidth: `var(--size-content)`,
+            // padding: `var(--size-gutter)`,
+          }
+        }
       >
         <main>{children}</main>
         {/* <footer
@@ -60,7 +66,7 @@ const Layout = ({ children }) => {
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer> */}
-        <Footer/>
+        <Footer />
       </div>
     </>
   )
