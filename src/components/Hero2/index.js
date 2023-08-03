@@ -1,11 +1,11 @@
 import React from "react"
 import styled from "styled-components"
 import DesktopHero from "../../images/hero-image.png"
-import MobileHero from "../../images/mobile-hero.jpg"
+// import MobileHero from "../../images/mobile-hero.jpg"
+// import Button from "../../components/Button/Button"
 import NoWrap from "../NoWrap"
 import Theme from "../../utils/globals/Theme"
 import { Link } from "gatsby"
-import Button from "../../components/Button/Button"
 
 const HeroContainer = styled.div`
   display: flex;
@@ -166,7 +166,7 @@ const Hero2 = () => {
         <Line />
       </TextContainer>
       <ImageContainer>
-        <img src={DesktopHero} alt="Hero image" />
+        <img src={DesktopHero} alt="Focused doctor" />
       </ImageContainer>
     </HeroContainer>
   )

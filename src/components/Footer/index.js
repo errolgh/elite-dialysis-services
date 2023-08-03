@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import Spectral from "../Spectral"
 import Theme from "../../utils/globals/Theme"
 import Logo from "../../images/hands-and-box.png"
