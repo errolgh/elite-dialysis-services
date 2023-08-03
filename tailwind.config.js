@@ -8,7 +8,7 @@ module.exports = {
     extend: {},
     fontFamily: {
       display: ["Oswald"],
-      body: ['Montserrat'],
+      body: ["Montserrat"],
     },
     plugins: [require("@tailwindcss/forms")],
   },

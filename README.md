@@ -116,11 +116,29 @@ Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby f
 
     Transportation assistance: Dialysis centers may offer transportation assistance for patients who have difficulty getting to and from their appointments.
 
-react-scroll-to-top https://www.npmjs.com/package/react-scroll-to-top
-form handling... probably emailjs
-services page
-image on contact page
-x on mobile scrolls away. mobile, open nav, scroll.
-potentially split first and last name, useMemo to personally thank user for submission
-add divs and margin-bottom to services page
-top-of-page for footer contact-us page.
+//global
+
+- react-scroll-to-top https://www.npmjs.com/package/react-scroll-to-top
+- x on mobile scrolls away. mobile, open nav, scroll.
+  -- favicon and metadata
+  -- active link
+  -- social link for facebook possibly
+
+/contact
+
+- top-of-page for footer contact-us page button (if possible)
+- form handling... probably emailjs
+- image overflows
+- potentially split first and last name, useMemo to personally thank user for submission
+- terms and agreements link
+
+/services
+
+- on-page jump links
+- jumbotron/hero https://cssfox.co/=maxim-aginsky/log/three-ways-to-tint-image-with-css3-box-shadow-multiple-backgrounds-and-pseudo-elements
+
+/about
+
+- build and style
+
+/404

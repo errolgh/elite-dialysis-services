@@ -5,8 +5,13 @@ import Seo from "../components/seo"
 
 const NotFoundPage = () => (
   <Layout>
-    <h1>404: Not Found</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <div className="flex items-center w-10/12 lg:w-1/2 bg-white flex-col mx-auto mt-6">
+      <h1 className="text-black-900">404: Not Found</h1>
+      <p className="text-grey-600">
+        You just hit a route that doesn&#39;t exist... the sadness.
+      </p>
+      <button className="btn-primary">Back to Home Page</button>
+    </div>
   </Layout>
 )
 

@@ -106,7 +106,7 @@ const Footer = () => (
             <li>Mon-Sat: 5:00AM - 5:00PM</li>
             <li>Sun: Closed</li>
             <li>
-              <Link to="/contact">
+              <Link to="/contact/">
                 <button className="btn-primary">Contact Us</button>
               </Link>
             </li>

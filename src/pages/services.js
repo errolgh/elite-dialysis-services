@@ -1,13 +1,14 @@
-import React from "react"
+import * as React from "react"
 import Layout from "../components/layout"
+// import { Link } from "gatbsy"
 
 const Services = () => {
   return (
     <Layout>
-      <div className="container mx-auto px-4 py-8 flex flex-col items-center justify-center">
+      <div className="container mx-auto px-4 py-8 flex flex-col items-center">
         <h1 className="text-4xl font-bold mb-4 font-display">Services</h1>
         <div className="mb-8">
-          <div className="mb-6">
+          <div className="mb-6 pb-12">
             {/* Hemodialysis */}
             <h3 className="text-2xl font-bold mb-2">Hemodialysis</h3>
             <p className="text-gray-700 font-body text-xl/loose">
@@ -31,7 +32,7 @@ const Services = () => {
               stress-free as possible.
             </p>
           </div>
-          <div className="mb-6">
+          <div className="mb-6 pb-12">
             {/* Peritoneal Dialysis */}
             <h3 className="text-2xl font-bold mb-2">Peritoneal Dialysis</h3>
             <p className="text-gray-700 font-body text-xl/loose">
@@ -55,93 +56,104 @@ const Services = () => {
           </div>
 
           {/* Home Dialysis Training */}
-          <h3 className="text-2xl font-bold mb-2">Home Dialysis Training</h3>
-          <p className="text-gray-700 font-body text-xl/loose">
-            We understand that the familiarity and comfort of home can play a
-            significant role in a patient's well-being. That's why our dialysis
-            center provides home dialysis training for eligible patients who
-            wish to administer their treatments in the comfort of their own
-            space. Home dialysis offers greater flexibility, reduced travel
-            time, and the ability to maintain a more normalized lifestyle.
-          </p>
+          <div className="mb-6 pb-12">
+            <h3 className="text-2xl font-bold mb-2">Home Dialysis Training</h3>
+            <p className="text-gray-700 font-body text-xl/loose">
+              We understand that the familiarity and comfort of home can play a
+              significant role in a patient's well-being. That's why our
+              dialysis center provides home dialysis training for eligible
+              patients who wish to administer their treatments in the comfort of
+              their own space. Home dialysis offers greater flexibility, reduced
+              travel time, and the ability to maintain a more normalized
+              lifestyle.
+            </p>
 
-          <p className="text-gray-700 font-body text-xl/loose">
-            Our experienced healthcare professionals will work closely with
-            patients and their families to ensure they feel confident and
-            capable of managing dialysis at home. We provide personalized
-            training sessions, covering everything from the proper use of
-            equipment to potential troubleshooting scenarios. Through ongoing
-            support and monitoring, we strive to make home dialysis a safe and
-            successful option for our patients.
-          </p>
+            <p className="text-gray-700 font-body text-xl/loose">
+              Our experienced healthcare professionals will work closely with
+              patients and their families to ensure they feel confident and
+              capable of managing dialysis at home. We provide personalized
+              training sessions, covering everything from the proper use of
+              equipment to potential troubleshooting scenarios. Through ongoing
+              support and monitoring, we strive to make home dialysis a safe and
+              successful option for our patients.
+            </p>
+          </div>
           {/* Nutritional Counseling */}
-          <h3 className="text-2xl font-bold mb-2">Nutritional Counseling</h3>
-          <p className="text-gray-700 font-body text-xl/loose">
-            A vital aspect of managing kidney disease is adhering to a tailored
-            and balanced diet. Our dialysis center offers nutritional counseling
-            services to help patients understand and embrace dietary
-            restrictions that support their overall health. Our skilled
-            dietitians will assess individual nutritional needs and create
-            personalized meal plans that align with each patient's unique
-            requirements and preferences.
-          </p>
+          <div className="mb-6 pb-12">
+            <h3 className="text-2xl font-bold mb-2">Nutritional Counseling</h3>
+            <p className="text-gray-700 font-body text-xl/loose">
+              A vital aspect of managing kidney disease is adhering to a
+              tailored and balanced diet. Our dialysis center offers nutritional
+              counseling services to help patients understand and embrace
+              dietary restrictions that support their overall health. Our
+              skilled dietitians will assess individual nutritional needs and
+              create personalized meal plans that align with each patient's
+              unique requirements and preferences.
+            </p>
 
-          <p className="text-gray-700 font-body text-xl/loose">
-            By educating patients on the importance of nutrition in managing
-            kidney disease, we aim to empower them to make informed food choices
-            that can positively impact their health and quality of life. Our
-            nutritional counseling is an integral part of our comprehensive
-            approach to kidney disease management, ensuring our patients receive
-            holistic care that extends beyond dialysis treatment.
-          </p>
+            <p className="text-gray-700 font-body text-xl/loose">
+              By educating patients on the importance of nutrition in managing
+              kidney disease, we aim to empower them to make informed food
+              choices that can positively impact their health and quality of
+              life. Our nutritional counseling is an integral part of our
+              comprehensive approach to kidney disease management, ensuring our
+              patients receive holistic care that extends beyond dialysis
+              treatment.
+            </p>
+          </div>
           {/* Medication Management */}
-          <h3 className="text-2xl font-bold mb-2">Medication Management</h3>
-          <p className="text-gray-700 font-body text-xl/loose">
-            Proper medication management is crucial for patients with kidney
-            disease to optimize their treatment outcomes and maintain stable
-            health. Our dialysis center offers specialized medication management
-            services, where our healthcare team works closely with patients to
-            ensure they understand their prescribed medications fully.
-          </p>
+          <div className="mb-6 pb-12">
+            <h3 className="text-2xl font-bold mb-2">Medication Management</h3>
+            <p className="text-gray-700 font-body text-xl/loose">
+              Proper medication management is crucial for patients with kidney
+              disease to optimize their treatment outcomes and maintain stable
+              health. Our dialysis center offers specialized medication
+              management services, where our healthcare team works closely with
+              patients to ensure they understand their prescribed medications
+              fully.
+            </p>
 
-          <p className="text-gray-700 font-body text-xl/loose">
-            We believe in fostering a collaborative relationship between
-            patients and healthcare providers, empowering patients to actively
-            participate in their medication regimen. Our team will provide
-            comprehensive information about each medication, including dosages,
-            potential side effects, and the importance of adherence. By
-            promoting medication compliance and awareness, we strive to enhance
-            the overall well-being of our patients.
-          </p>
-          {/* Social Work Services */}
-          <h3 className="text-2xl font-bold mb-2">Social Work Services</h3>
-          <p className="text-gray-700 font-body text-xl/loose">
-            Living with kidney disease can be emotionally and socially
-            challenging. Our dialysis center recognizes the importance of
-            addressing these aspects of our patients' lives. We offer dedicated
-            social work services to support patients and their families in
-            coping with the emotional impact of kidney disease.
-          </p>
+            <p className="text-gray-700 font-body text-xl/loose">
+              We believe in fostering a collaborative relationship between
+              patients and healthcare providers, empowering patients to actively
+              participate in their medication regimen. Our team will provide
+              comprehensive information about each medication, including
+              dosages, potential side effects, and the importance of adherence.
+              By promoting medication compliance and awareness, we strive to
+              enhance the overall well-being of our patients.
+            </p>
+          </div>
+          <div className="mb-6 pb-12">
+            {/* Social Work Services */}
+            <h3 className="text-2xl font-bold mb-2">Social Work Services</h3>
+            <p className="text-gray-700 font-body text-xl/loose">
+              Living with kidney disease can be emotionally and socially
+              challenging. Our dialysis center recognizes the importance of
+              addressing these aspects of our patients' lives. We offer
+              dedicated social work services to support patients and their
+              families in coping with the emotional impact of kidney disease.
+            </p>
 
-          <p className="text-gray-700 font-body text-xl/loose">
-            Our compassionate and experienced social workers provide counseling
-            and emotional support, helping patients navigate the challenges and
-            adjustments that come with chronic kidney disease. Additionally, we
-            offer support groups where patients can connect with others facing
-            similar experiences, fostering a sense of community and
-            understanding.
-          </p>
+            <p className="text-gray-700 font-body text-xl/loose">
+              Our compassionate and experienced social workers provide
+              counseling and emotional support, helping patients navigate the
+              challenges and adjustments that come with chronic kidney disease.
+              Additionally, we offer support groups where patients can connect
+              with others facing similar experiences, fostering a sense of
+              community and understanding.
+            </p>
 
-          <p className="text-gray-700 font-body text-xl/loose">
-            Furthermore, our social workers can assist patients in accessing
-            community resources, providing valuable guidance on financial
-            support, transportation assistance, and other relevant services. At
-            our dialysis center, we are committed to caring for the whole
-            person, recognizing that emotional well-being is just as vital as
-            physical health.
-          </p>
+            <p className="text-gray-700 font-body text-xl/loose">
+              Furthermore, our social workers can assist patients in accessing
+              community resources, providing valuable guidance on financial
+              support, transportation assistance, and other relevant services.
+              At our dialysis center, we are committed to caring for the whole
+              person, recognizing that emotional well-being is just as vital as
+              physical health.
+            </p>
+          </div>
           {/* Transportation Assistance */}
-          <div className="mb-6">
+          <div className="mb-6 pb-12">
             <h3 className="text-2xl font-bold mb-2">
               Transportation Assistance
             </h3>
@@ -175,6 +187,7 @@ const Services = () => {
               journey.
             </p>
           </div>
+          {/* <Link to='/'>If you </Link> */}
         </div>
       </div>
     </Layout>

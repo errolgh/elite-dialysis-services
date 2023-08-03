@@ -160,7 +160,7 @@ const Hero2 = () => {
           We provide top-notch dialysis services to ensure our patients receive
           the best care possible
         </P>
-        <Link to="/contact">
+        <Link to="/contact/">
           <button className="btn-primary">Contact Us</button>
         </Link>
         <Line />
