@@ -69,12 +69,7 @@ const DefaultButton = styled.button`
 
 export default function Button({ size, color, children, onClick, type }) {
   return (
-    <DefaultButton
-      type={type}
-      size={size}
-      color={color}
-      onClick={onClick}
-    >
+    <DefaultButton type={type} size={size} color={color} onClick={onClick}>
       {children}
     </DefaultButton>
   )

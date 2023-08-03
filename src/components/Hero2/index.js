@@ -5,7 +5,7 @@ import MobileHero from "../../images/mobile-hero.jpg"
 import NoWrap from "../NoWrap"
 import Theme from "../../utils/globals/Theme"
 import { Link } from "gatsby"
-import Button from '../../components/Button/Button'
+import Button from "../../components/Button/Button"
 
 const HeroContainer = styled.div`
   display: flex;

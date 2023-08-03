@@ -25,7 +25,7 @@ const Ul = styled.ul`
     flex-flow: column nowrap;
     background-color: #0d2538;
     opacity: 0.98;
-padding-right: 0;
+    padding-right: 0;
     position: fixed;
     top: 0;
     right: 0;

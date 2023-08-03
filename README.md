@@ -116,7 +116,6 @@ Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby f
 
     Transportation assistance: Dialysis centers may offer transportation assistance for patients who have difficulty getting to and from their appointments.
 
-
 react-scroll-to-top https://www.npmjs.com/package/react-scroll-to-top
 form handling... probably emailjs
 services page

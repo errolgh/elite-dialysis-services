@@ -191,13 +191,24 @@ const onSubmit = values => {
 }
 
 const validationSchema = Yup.object().shape({
-    name: Yup.string().required('Name is required').min(3, 'Name must be at least 3 characters'),
-    email: Yup.string().required('Email is required').email('Invalid email format'),
-    country: Yup.string().required('Country is required'),
-    termsOfService: Yup.boolean().oneOf([true], 'You must accept the terms of service'),
-  });
-  
-  const countries = ['Jamaica', 'Trinidad and Tobago', 'Barbados', /* Add more Caribbean countries here */];
+  name: Yup.string()
+    .required("Name is required")
+    .min(3, "Name must be at least 3 characters"),
+  email: Yup.string()
+    .required("Email is required")
+    .email("Invalid email format"),
+  country: Yup.string().required("Country is required"),
+  termsOfService: Yup.boolean().oneOf(
+    [true],
+    "You must accept the terms of service"
+  ),
+})
+
+const countries = [
+  "Jamaica",
+  "Trinidad and Tobago",
+  "Barbados" /* Add more Caribbean countries here */,
+]
 
 // const validate = values => {
 //   let errors = {}
@@ -226,11 +237,11 @@ const validationSchema = Yup.object().shape({
 // CONSIDER FORMIK'S BUILT-IN FORM VALIDATION
 const OldContactForm = () => {
   // Formic Logic
-//   const formik = useFormik({
-//     initialValues,
-//     onSubmit,
-//     validationSchema,
-//   })
+  //   const formik = useFormik({
+  //     initialValues,
+  //     onSubmit,
+  //     validationSchema,
+  //   })
 
   // console.log("formik.errors: ", formik.errors)
   // console.log("formik.values: ", formik.values)
@@ -248,9 +259,9 @@ const OldContactForm = () => {
 
   return (
     <Formik
-    initialValues={initialValues}
-    validationSchema={validationSchema}
-    onSubmit={onSubmit}
+      initialValues={initialValues}
+      validationSchema={validationSchema}
+      onSubmit={onSubmit}
     >
       {/* <h3>Call, reachout, visit</h3> */}
       {/* consider a brand-green background color for this page */}
@@ -267,8 +278,7 @@ const OldContactForm = () => {
               {/* name input field */}
               <LabelDiv>
                 <Label htmlFor="name">
-                  Name{" "}
-                  <ErrorMessage name='name' />
+                  Name <ErrorMessage name="name" />
                 </Label>
                 <Input
                   //   value={formik.values.name}
@@ -282,8 +292,7 @@ const OldContactForm = () => {
               <LabelDiv>
                 {/* email input field */}
                 <Label htmlFor="email">
-                  Email{" "}
-                  <ErrorMessage name='email' />
+                  Email <ErrorMessage name="email" />
                 </Label>
                 <Input
                   //   value={formik.values.email}
@@ -337,16 +346,15 @@ const OldContactForm = () => {
               {/* terms of service checkbox */}
               <LabelDiv>
                 <Label htmlFor="terms">
-                  Terms of service{" "}
-                  <ErrorMessage name='terms' />
+                  Terms of service <ErrorMessage name="terms" />
                 </Label>
 
                 <Tos>
                   <CheckboxContainer>
                     <Checkbox
-                    //   onChange={formik.handleChange}
-                    //   value={formik.values.terms}
-                    //   onBlur={formik.handleBlur}
+                      //   onChange={formik.handleChange}
+                      //   value={formik.values.terms}
+                      //   onBlur={formik.handleBlur}
                       type="checkbox"
                       name="terms"
                       // value="checked"

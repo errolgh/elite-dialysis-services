@@ -50,7 +50,7 @@ const NavBar = () => {
       <div className="align-baseline">
         <StyledLink to="/">
           <LogoContainer>
-            <img src={Logo} width={36} alt="Elite Dialysis Logo"/>
+            <img src={Logo} width={36} alt="Elite Dialysis Logo" />
             <span>Elite Dialysis</span>
           </LogoContainer>
         </StyledLink>

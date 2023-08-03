@@ -202,7 +202,11 @@ const FormComponent = () => {
                 />
               </div>
 
-              <button className="btn-primary" type="submit" disabled={isSubmitting}>
+              <button
+                className="btn-primary"
+                type="submit"
+                disabled={isSubmitting}
+              >
                 Submit
               </button>
             </Form>

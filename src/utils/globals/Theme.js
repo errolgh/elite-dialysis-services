@@ -14,7 +14,7 @@ const Theme = {
     eliteSubTitle: '"Oswald", monospace',
     eliteTitle: '"dmsDisplay", Georgia, serif',
   },
-  text:{
+  text: {
     xs: "14",
     sm: "16",
     md: "22",
