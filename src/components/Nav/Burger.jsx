@@ -10,11 +10,17 @@ const StyledBurger = styled.div`
   width: 2rem;
   height: 2rem;
   margin-top: 12px;
-  top: 15px;
-  right: 20px;
+
+  /* if nav is not sticky */
+  top: 5px;
+  right: 13px;
+
   z-index: 20;
   display: none;
   @media (max-width: 768px) {
+    position: ${({ open }) => (open ? `fixed` : `static`)};
+    top: 5px;
+    right: 13px;
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;

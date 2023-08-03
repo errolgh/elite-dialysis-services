@@ -118,10 +118,8 @@ Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby f
 
 //global
 
-- react-scroll-to-top https://www.npmjs.com/package/react-scroll-to-top
 - x on mobile scrolls away. mobile, open nav, scroll.
-  -- favicon and metadata
-  -- active link
+- site map, navigation, back-to-top on footer, sticky nav decisions
   -- social link for facebook possibly
 
 /contact
@@ -138,7 +136,10 @@ Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby f
 - jumbotron/hero https://cssfox.co/=maxim-aginsky/log/three-ways-to-tint-image-with-css3-box-shadow-multiple-backgrounds-and-pseudo-elements
 
 /about
-
+- add address
+- add mission statement
+- add story
+- link to services
 - build and style
 
 /404

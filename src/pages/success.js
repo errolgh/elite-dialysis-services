@@ -1,6 +1,7 @@
 import * as React from "react"
 // import Theme from "../utils/globals/Theme"
 // import * as styles from "../components/index.module.css"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 
@@ -20,7 +21,9 @@ const Success = () => {
             at Elite Dialysis&trade;:
           </p>
           <div className="flex justify-center">
-            <a href={"/services"}>Elite&trade; Services</a>
+            <Link to="/services/">
+            <p>Elite&trade; Services</p>
+            </Link>
           </div>
         </div>
       </main>
