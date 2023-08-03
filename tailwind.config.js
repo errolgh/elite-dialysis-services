@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      display: ["Oswald"],
+      body: ['Montserrat'],
+    },
+    plugins: [require("@tailwindcss/forms")],
   },
-  plugins: [require("@tailwindcss/forms")],
 }

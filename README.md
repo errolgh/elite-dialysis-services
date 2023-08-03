@@ -122,3 +122,5 @@ services page
 image on contact page
 x on mobile scrolls away. mobile, open nav, scroll.
 potentially split first and last name, useMemo to personally thank user for submission
+add divs and margin-bottom to services page
+top-of-page for footer contact-us page.

@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 import Spectral from "../Spectral"
 import Theme from "../../utils/globals/Theme"
 import Logo from "../../images/hands-and-box.png"
@@ -87,8 +87,14 @@ const Footer = () => (
             <li>55 Manchester Avenue</li>
             <li>Lot 8 Fearon's Place</li>
             <li>May Pen, Jamaica</li>
-            <li>(876) 203-5254</li>
-            <li>elitedialysisserviceltd@gmail.com</li>
+            <li>
+              <Link href="tel:+18762035254">1-876-203-5254</Link>
+            </li>
+            <li>
+              <Link href="mailto:elitedialysisserviceltd@gmail.com">
+                elitedialysisserviceltd@gmail.com
+              </Link>
+            </li>
           </List>
         </ContactInfo>
       </FooterSubSection>
@@ -99,6 +105,11 @@ const Footer = () => (
           <List>
             <li>Mon-Sat: 5:00AM - 5:00PM</li>
             <li>Sun: Closed</li>
+            <li>
+              <Link to="/contact">
+                <button className="btn-primary">Contact Us</button>
+              </Link>
+            </li>
           </List>
         </ContactInfo>
       </FooterSubSection>
