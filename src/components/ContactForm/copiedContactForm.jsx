@@ -1,8 +1,6 @@
 import React from "react"
 import DesktopHero from "../../images/hero-image.png"
-// import Theme from "../../utils/globals/Theme"
-// import termsOfService from "../../utils/data/termsofservice"
-// import Button from "../../components/Button/Button"
+import Theme from "../../utils/globals/Theme"
 import { Formik, Form, Field, ErrorMessage } from "formik"
 import * as Yup from "yup"
 import { navigate } from "gatsby"
@@ -44,19 +42,21 @@ const FormComponent = () => {
   }
 
   return (
-    <section
-      className={`lg:px-20 align-middle relative flex flex-wrap items-center`}
-    >
-      <div className="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24">
-        <div className="mx-auto max-w-lg text-center">
-          <h1 className="text-2xl font-bold sm:text-3xl">Reach out today.</h1>
-
-          <p className="mt-4 text-gray-600">
-            Take the first step towards better health today – Fill out the form
-            and a member from our qualified team will contact you regarding
-            personalized treatment options.
-          </p>
-        </div>
+    <section className="px-6 mt-10 max-w-md mx-auto lg:max-w-5xl mb-16 lg:mb-32">
+      {/* Imperative Text */}
+      <div className="mt-10">
+        <h1 className="font-heading text-2xl font-bold lg:text-4xl lg:mx-0">
+          Reach out <span className="text-eliteGreen">today</span>.
+        </h1>
+        <p className="font-body lg:text-xl">
+          Take the first step towards better health today. Fill out this form
+          and a member from our qualified team will contact you regarding
+          personalized treatment options.
+        </p>
+      </div>
+      {/* Form / Hero Container */}
+      <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-10">
+        {/* Form */}
         <Formik
           initialValues={{
             name: "",
@@ -70,7 +70,7 @@ const FormComponent = () => {
           onSubmit={handleSubmit}
         >
           {({ isSubmitting }) => (
-            <Form className="mx-auto mb-0 mt-8 max-w-md space-y-4">
+            <Form className="mx-auto mb-0 mt-8 space-y-4 font-body">
               <div className="mb-4">
                 <label
                   htmlFor="name"
@@ -212,15 +212,14 @@ const FormComponent = () => {
             </Form>
           )}
         </Formik>
-      </div>
-
-      <div className="relative h-64 w-full sm:h-96 lg:h-full lg:w-1/2">
-        <img
-          alt="A welcoming doctor"
-          src={DesktopHero}
-          // className="absolute inset-0 h-full w-full object-cover h-90"
-          className="mb-0 block m-auto rounded-3xl lg:w-88"
-        />
+        {/* Contact Hero Image */}
+        <div className="mt-10 lg:mt-0">
+          <img
+            alt="A welcoming doctor"
+            src={DesktopHero}
+            className=" rounded-md shadow-lg lg:m-0"
+          />
+        </div>
       </div>
     </section>
   )

@@ -1,11 +1,14 @@
 import * as React from "react"
 import Layout from "../components/layout"
-// import { Link } from "gatbsy"
 
 const Services = () => {
   return (
     <Layout>
       <div className="container mx-auto px-4 py-8 flex flex-col items-center">
+        {/* < to="/services#team" title="Our team">
+          <p>Hemodialysis</p>
+        </> */}
+{/* https://medium.com/@chrisfitkin/how-to-smooth-scroll-links-in-gatsby-3dc445299558 */}
         <h1 className="text-4xl font-bold mb-4 font-display">Services</h1>
         <div className="mb-8">
           <div className="mb-6 pb-12">

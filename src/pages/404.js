@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from 'gatsby'
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -10,7 +11,9 @@ const NotFoundPage = () => (
       <p className="text-grey-600">
         You just hit a route that doesn&#39;t exist... the sadness.
       </p>
+      <Link to="/">
       <button className="btn-primary">Back to Home Page</button>
+      </Link>
     </div>
   </Layout>
 )
