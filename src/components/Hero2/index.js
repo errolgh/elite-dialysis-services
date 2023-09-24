@@ -1,8 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import DesktopHero from "../../images/hero-image.png"
-// import MobileHero from "../../images/mobile-hero.jpg"
-// import Button from "../../components/Button/Button"
 import NoWrap from "../NoWrap"
 import Theme from "../../utils/globals/Theme"
 import { Link } from "gatsby"

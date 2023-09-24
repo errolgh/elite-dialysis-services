@@ -116,30 +116,26 @@ Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby f
 
     Transportation assistance: Dialysis centers may offer transportation assistance for patients who have difficulty getting to and from their appointments.
 
-//global
-
-- x on mobile scrolls away. mobile, open nav, scroll.
+### //global
 - site map, navigation, back-to-top on footer, sticky nav decisions
-  -- social link for facebook possibly
+- animations
+https://www.youtube.com/watch?v=oPteQFUK42w&ab_channel=developedbyed
 
-/contact
-
-- top-of-page for footer contact-us page button (if possible)
-- form handling... probably emailjs
+### /contact
+- take contact us button out of footer and make a CTA component at the end of each page.
+- getforms or formsubmit.co
 - image overflows
 - potentially split first and last name, useMemo to personally thank user for submission
-- terms and agreements link
+- {/* https://javascript.plainenglish.io/create-a-country-select-component-with-react-2021-a259bd0350d5 */}
+- terms and agreements link (list ministry of health information)
 
-/services
-
-- on-page jump links
+### /services
+- on-page jump links https://www.gatsbyjs.com/plugins/gatsby-plugin-anchor-links/
 - jumbotron/hero https://cssfox.co/=maxim-aginsky/log/three-ways-to-tint-image-with-css3-box-shadow-multiple-backgrounds-and-pseudo-elements
 
-/about
-- add address
-- add mission statement
-- add story
-- link to services
-- build and style
+### /about
+- add address, mission statement (ministry of health requirement), vision statement, add story, link to services, meet the staff
+- build and style + jumbotron
 
-/404
+### /404
+- complete responsive design
