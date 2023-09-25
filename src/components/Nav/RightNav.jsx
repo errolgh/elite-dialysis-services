@@ -49,7 +49,7 @@ const Ul = styled.ul`
   }
 `
 
-const StyledLink = styled(Link)`
+const Li = styled.li`
   text-decoration: none;
   color: white;
 `
@@ -57,18 +57,18 @@ const StyledLink = styled(Link)`
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <StyledLink to="/" activeClassName="active">
-        <li>Home</li>
-      </StyledLink>
-      <StyledLink to="/services/" activeClassName="active">
-        <li>Services</li>
-      </StyledLink>
-      <StyledLink to="/about/" activeClassName="active">
-        <li>About Us</li>
-      </StyledLink>
-      <StyledLink to="/contact/" activeClassName="active">
-        <li>Contact Us</li>
-      </StyledLink>
+      <Link to="/" activeClassName="active">
+        <Li>Home</Li>
+      </Link>
+      <Link to="/services/" activeClassName="active">
+        <Li>Services</Li>
+      </Link>
+      <Link to="/about/" activeClassName="active">
+        <Li>About Us</Li>
+      </Link>
+      <Link to="/contact/" activeClassName="active">
+        <Li>Contact Us</Li>
+      </Link>
     </Ul>
   )
 }

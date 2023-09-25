@@ -109,7 +109,7 @@ const P = styled.p`
 
   @media (min-width: ${Theme.breakpoints.md}px) {
     color: ${Theme.colors.white};
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 0;
     text-align: left;
   }

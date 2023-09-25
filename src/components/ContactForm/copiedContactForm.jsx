@@ -42,7 +42,7 @@ const FormComponent = () => {
   }
 
   return (
-    <section className="px-6 mt-10 max-w-md mx-auto lg:max-w-5xl mb-16 lg:mb-32">
+    <section id="reach-out-today" className="px-6 mt-10 max-w-md mx-auto lg:max-w-5xl mb-16 lg:mb-32">
       {/* Imperative Text */}
       <div className="mt-10">
         <h1 className="font-heading text-2xl font-bold lg:text-4xl lg:mx-0">

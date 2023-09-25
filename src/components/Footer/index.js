@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Spectral from "../Spectral"
 import Theme from "../../utils/globals/Theme"
 import Logo from "../../images/hands-and-box.png"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const FooterContainer = styled.footer`
   display: flex;
@@ -106,9 +107,9 @@ const Footer = () => (
             <li>Mon-Sat: 5:00AM - 5:00PM</li>
             <li>Sun: Closed</li>
             <li>
-              <Link to="/contact/">
+              <AnchorLink to="/contact#reach-out-today">
                 <button className="btn-primary">Contact Us</button>
-              </Link>
+              </AnchorLink>
             </li>
           </List>
         </ContactInfo>
