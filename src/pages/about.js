@@ -136,7 +136,7 @@ const About = () => {
               <p className="text-gray-700 font-body text-lg md:text-xl italic">
                 A driving force at Elite, hailing from Frankfield, Marcia has
                 over 40 years of experience in professional and private patient
-                care. Highly respected in the healthcare community, she is known
+                care across the Uninted States and Jamaica. Highly respected in the healthcare community, she is known
                 for her wealth of knowledge and a commitment to proper patient
                 care protocol.
               </p>
