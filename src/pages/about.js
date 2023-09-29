@@ -144,7 +144,7 @@ const About = () => {
                 She leads a team that stays at the forefront of dialysis
                 advancements. Her mission is to provide cutting-edge treatments
                 and compassionate support, making a positive impact on the lives
-                of Maypenners.
+                of May Penners.
               </p>
             </div>
           </div>
