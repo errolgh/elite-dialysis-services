@@ -9,7 +9,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Eliete Dialysis Service LTD`,
+    title: `Elite Dialysis Service LTD`,
     description: `Elite Dialysis Center, located in 55 Manchester Avenue, Lot 8 Fearon's Place, May Pen, Jamaica, is a dialysis center that specializes in Hemodialysis, an essential lifeline treatment for patients with end-stage renal disease (ESRD)`,
     author: `Spectral Web Designs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,

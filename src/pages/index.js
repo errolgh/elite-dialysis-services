@@ -1,4 +1,6 @@
-import * as React from "react"
+import React, { useState } from 'react';
+import Modal from '../components/Modal';
+
 // import { Link } from "gatsby"
 // import { StaticImage } from "gatsby-plugin-image"
 // import * as styles from "../components/index.module.css"
@@ -22,8 +24,17 @@ const welcomeText = `We are focused on providing high-quality treatment to our p
 
 // const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
-const IndexPage = () => (
+const IndexPage = () => {
+
+  const [isModalOpen, setIsModalOpen] = useState(true);
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  return (
   <Layout>
+    <Modal isOpen={isModalOpen} onClose={closeModal} />
     <Hero2 />
     <WelcomeCallOut
       //  src={Logo}
@@ -43,8 +54,8 @@ const IndexPage = () => (
       description="Our dialysis center is situated in the heart of May Pen, Jamaica, and is easily accessible from route A2. We are conveniently located near major transportation routes, making it easy for our patients to reach us. Ideal for patients who need care without having to travel far from home. You can rest assured that you are receiving the best possible care in the May Pen area."
     />
     <TestimonialSlider />
-  </Layout>
-)
+  </Layout>)
+}
 /**
  * Head export to define metadata for the page
  *
