@@ -29,11 +29,11 @@ export default function Spectral() {
     <>
       <Container>
         <a
-          href="https://spectralwebdesigns.netlify.app/"
+          href="https://www.gratefulwebdesigns.com/"
           rel="noreferrer"
           target="_blank"
         >
-          Powered by &copy; Spectral Web Designs
+          Powered by &copy; Grateful Web Designs
         </a>
       </Container>
     </>
